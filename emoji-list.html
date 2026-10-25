@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Complete Unicode Emojis List &amp; Directory | FunEmojis.app</title>
+  <meta name="title" content="Complete Unicode Emojis List &amp; Directory | FunEmojis.app">
+  <meta name="description" content="Browse the complete Unicode Emojis List with official names, shortcodes, and hexadecimal codepoints. 1-click copy & paste emojis for Instagram, TikTok, Discord, and WhatsApp.">
+  <meta name="keywords" content="emojis list, unicode emoji list, all emojis list, emoji symbols copy and paste, emoji directory, copy paste emojis list, emoji copy, emoji shortcodes, funemojis.app">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://funemojis.app/emoji-list">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://funemojis.app/emoji-list">
+  <meta property="og:title" content="Complete Unicode Emojis List & Directory | FunEmojis.app">
+  <meta property="og:description" content="Search & copy from 2,000+ official Unicode emojis with names, shortcodes, and codepoints.">
+  <meta property="og:image" content="https://funemojis.app/og-image.svg">
+  <meta property="og:site_name" content="FunEmojis.app">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://funemojis.app/emoji-list">
+  <meta property="twitter:title" content="Complete Unicode Emojis List & Directory | FunEmojis.app">
+  <meta property="twitter:description" content="Browse all official Unicode emojis with names, shortcodes, and hex codepoints.">
+  <meta property="twitter:image" content="https://funemojis.app/og-image.svg">
+
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📑</text></svg>">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#4f46e5">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script type="module">
+    import { polyfillCountryFlagEmojis } from "https://cdn.skypack.dev/country-flag-emoji-polyfill";
+    polyfillCountryFlagEmojis();
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="bg-slate-50 text-slate-900 min-h-screen flex flex-col antialiased selection:bg-indigo-500 selection:text-white">
+
+  <!-- Sticky Header -->
+  <header class="sticky top-0 z-40 bg-white/90 backdrop-blur-md border-b border-slate-200 shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between gap-4">
+      <a href="index.html" class="flex items-center gap-2.5 group">
+        <div class="w-10 h-10 rounded-2xl bg-gradient-to-tr from-indigo-600 via-pink-500 to-rose-500 flex items-center justify-center text-xl shadow-md group-hover:scale-105 transition-transform">
+          ✨
+        </div>
+        <div>
+          <span class="text-xl font-extrabold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-indigo-600 to-pink-600">
+            FunEmojis<span class="text-slate-800">.app</span>
+          </span>
+          <span class="hidden sm:inline-block text-[10px] font-bold uppercase tracking-widest text-indigo-500 ml-1.5 px-2 py-0.5 rounded-full bg-indigo-50 border border-indigo-100">
+            List Directory
+          </span>
+        </div>
+      </a>
+
+      <nav class="flex items-center gap-2 sm:gap-3">
+        <a href="index.html" class="px-3.5 py-1.5 rounded-xl text-xs font-semibold text-slate-600 hover:text-indigo-600 hover:bg-slate-100 transition">
+          ⌨️ Keyboard
+        </a>
+        <a href="kaomoji.html" class="px-3.5 py-1.5 rounded-xl text-xs font-semibold text-slate-600 hover:text-indigo-600 hover:bg-slate-100 transition">
+          🌸 Kaomoji
+        </a>
+        <a href="generator.html" class="px-3.5 py-1.5 rounded-xl text-xs font-semibold text-slate-600 hover:text-indigo-600 hover:bg-slate-100 transition">
+          𝓕 Generator
+        </a>
+        <a href="translator.html" class="px-3.5 py-1.5 rounded-xl text-xs font-semibold text-slate-600 hover:text-indigo-600 hover:bg-slate-100 transition">
+          ✨ Combos
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content Container -->
+  <main class="flex-grow max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 w-full">
+    <div class="mb-6 flex flex-col md:flex-row md:items-center justify-between gap-4">
+      <div>
+        <h1 class="text-3xl font-extrabold text-slate-900 tracking-tight flex items-center gap-2.5">
+          <span>📑 Complete Unicode Emojis List &amp; Directory</span>
+        </h1>
+        <p class="text-sm text-slate-500 mt-1.5">
+          Search and copy 2,000+ official Unicode emojis with names, shortcodes, and hexadecimal code points.
+        </p>
+      </div>
+
+      <span id="list-count-badge" class="self-start md:self-auto px-3.5 py-1.5 rounded-lg bg-indigo-50 text-xs font-bold text-indigo-600 border border-indigo-100">
+        Loading Directory...
+      </span>
+    </div>
+
+    <!-- List Filters Toolbar -->
+    <div class="mb-6 grid grid-cols-1 sm:grid-cols-3 gap-3">
+      <div class="sm:col-span-2 relative">
+        <input
+          type="text"
+          id="list-search-input"
+          class="w-full pl-4 pr-10 py-2.5 rounded-xl bg-white border border-slate-200 text-slate-900 placeholder-slate-400 focus:ring-2 focus:ring-indigo-500 focus:outline-none text-sm shadow-sm"
+          placeholder="Search directory by name, shortcode (:smile:), or unicode (U+1F600)..."
+          aria-label="Search emojis list directory"
+        >
+      </div>
+
+      <div>
+        <select id="list-category-select" class="w-full py-2.5 px-3 rounded-xl bg-white border border-slate-200 text-slate-700 text-sm font-medium focus:ring-2 focus:ring-indigo-500 focus:outline-none cursor-pointer shadow-sm">
+          <option value="all">✨ All Categories</option>
+          <option value="smileys">😀 Smileys &amp; Emotion</option>
+          <option value="people">👋 People &amp; Body</option>
+          <option value="animals">🐱 Animals &amp; Nature</option>
+          <option value="food">🍕 Food &amp; Drink</option>
+          <option value="travel">✈️ Travel &amp; Places</option>
+          <option value="activities">⚽ Activities &amp; Sports</option>
+          <option value="objects">💡 Objects &amp; Tools</option>
+          <option value="symbols">❤️ Symbols &amp; Signs</option>
+          <option value="flags">🚩 Flags</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- Table Container -->
+    <div class="overflow-x-auto rounded-2xl border border-slate-200 bg-white shadow-sm">
+      <table class="w-full text-left border-collapse">
+        <thead>
+          <tr class="border-b border-slate-200 bg-slate-50 text-xs font-bold uppercase tracking-wider text-slate-500">
+            <th class="py-3 px-4 text-center w-16">Emoji</th>
+            <th class="py-3 px-4">Name &amp; Keywords</th>
+            <th class="py-3 px-4 hidden md:table-cell">Category</th>
+            <th class="py-3 px-4 hidden sm:table-cell">Shortcode &amp; Code</th>
+            <th class="py-3 px-4 text-right">Action</th>
+          </tr>
+        </thead>
+        <tbody id="list-table-body" class="divide-y divide-slate-100">
+          <!-- Populated by JS -->
+        </tbody>
+      </table>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="mt-16 bg-white border-t border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-400 gap-3">
+      <p>&copy; 2026 FunEmojis.app. All rights reserved.</p>
+      <div class="flex gap-4">
+        <a href="about.html" class="hover:text-indigo-600">About</a>
+        <a href="contact.html" class="hover:text-indigo-600">Contact</a>
+        <a href="privacy-policy.html" class="hover:text-indigo-600">Privacy Policy</a>
+        <a href="terms-of-service.html" class="hover:text-indigo-600">Terms</a>
+      </div>
+    </div>
+  </footer>
+
+  <div id="toast" class="flex items-center gap-3 px-4 py-3 rounded-xl bg-slate-900 text-white shadow-2xl text-sm font-medium">
+    <span id="toast-emoji">📋</span>
+    <span id="toast-text">Copied!</span>
+  </div>
+
+  <script src="js/translations.js?v=2.1"></script>
+  <script src="js/emoji-data.js?v=2.1"></script>
+  <script>
+    // Lightweight directory runner
+    document.addEventListener('DOMContentLoaded', () => {
+      const tableBody = document.getElementById('list-table-body');
+      const countBadge = document.getElementById('list-count-badge');
+      const searchInput = document.getElementById('list-search-input');
+      const categorySelect = document.getElementById('list-category-select');
+      const toast = document.getElementById('toast');
+      const toastText = document.getElementById('toast-text');
+      const toastEmoji = document.getElementById('toast-emoji');
+
+      let currentCat = 'all';
+      let currentQuery = '';
+
+      function copyVal(val, icon) {
+        navigator.clipboard.writeText(val).then(() => {
+          toastEmoji.textContent = icon || '📋';
+          toastText.textContent = `Copied: ${val}`;
+          toast.classList.add('show');
+          setTimeout(() => toast.classList.remove('show'), 2000);
+        });
+      }
+
+      function renderList() {
+        const filtered = EMOJI_DATA.filter(item => {
+          const matchCat = currentCat === 'all' || item.cat === currentCat;
+          if (!matchCat) return false;
+          if (!currentQuery) return true;
+          const text = `${item.char} ${item.name} ${item.shortcode || ''} ${item.code || ''} ${(item.keywords || []).join(' ')}`.toLowerCase();
+          return text.includes(currentQuery);
+        });
+
+        countBadge.textContent = `${filtered.length} Emojis Found`;
+
+        tableBody.innerHTML = filtered.map(item => {
+          const slug = item.name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
+          return `
+          <tr class="hover:bg-slate-50 transition-colors">
+            <td class="py-3 px-4 text-center text-3xl font-emoji cursor-pointer" onclick="navigator.clipboard.writeText('${item.char}')">${item.char}</td>
+            <td class="py-3 px-4">
+              <a href="/emoji/${slug}" class="font-bold text-sm text-slate-800 hover:text-indigo-600 transition">${item.name}</a>
+              <div class="text-xs text-slate-400 mt-0.5">${(item.keywords || []).slice(0, 5).join(', ')}</div>
+            </td>
+            <td class="py-3 px-4 hidden md:table-cell">
+              <span class="px-2 py-0.5 rounded-full bg-slate-100 text-slate-600 text-xs font-semibold capitalize">${item.cat}</span>
+            </td>
+            <td class="py-3 px-4 hidden sm:table-cell font-mono text-xs text-slate-500">
+              <div>${item.shortcode || ''}</div>
+              <div class="text-slate-400 text-[11px]">${item.code || ''}</div>
+            </td>
+            <td class="py-3 px-4 text-right">
+              <button onclick="navigator.clipboard.writeText('${item.char}')" class="px-3 py-1.5 rounded-lg bg-indigo-50 hover:bg-indigo-600 hover:text-white text-indigo-600 text-xs font-bold transition">
+                Copy
+              </button>
+            </td>
+          </tr>
+        `;}).join('');
+      }
+
+      searchInput.addEventListener('input', (e) => {
+        currentQuery = e.target.value.toLowerCase().trim();
+        renderList();
+      });
+
+      categorySelect.addEventListener('change', (e) => {
+        currentCat = e.target.value;
+        renderList();
+      });
+
+      renderList();
+    });
+  </script>
+</body>
+</html>

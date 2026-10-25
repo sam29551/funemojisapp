@@ -1,0 +1,42 @@
+# robots.txt for FunEmojis.app
+User-agent: *
+Allow: /
+Allow: /emoji/
+Allow: /kaomoji
+
+# Block search query parameter URLs (duplicate content)
+Disallow: /*?search=
+Disallow: /*?q=
+Disallow: /*?emoji=
+
+# Block sitemap.xml from being indexed as a page
+Disallow: /sitemap.xml
+Disallow: /sitemap.xsl
+
+# Allow Major Search Engine Crawlers
+User-agent: Googlebot
+Allow: /
+Allow: /emoji/
+Allow: /kaomoji
+Disallow: /*?search=
+Disallow: /*?q=
+Disallow: /*?emoji=
+
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+Allow: /emoji/
+Allow: /kaomoji
+Disallow: /*?search=
+Disallow: /*?q=
+Disallow: /*?emoji=
+
+User-agent: Applebot
+Allow: /
+
+# Host & Sitemap location
+Host: https://funemojis.app
+Sitemap: https://funemojis.app/sitemap.xml
+Sitemap: https://funemojis.app/sitemap-emojis.xml

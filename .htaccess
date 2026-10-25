@@ -1,0 +1,30 @@
+# Apache / cPanel / LiteSpeed .htaccess Configuration for FunEmojis.app
+RewriteEngine On
+RewriteBase /
+
+# 1. Force HTTPS
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# 2. Support Clean High-Traffic Routes (Emoji List, Generator, Translator, Kaomoji)
+RewriteRule ^emoji-list/?$ /emoji-list.html [L,QSA]
+RewriteRule ^generator/?$ /generator.html [L,QSA]
+RewriteRule ^translator/?$ /translator.html [L,QSA]
+RewriteRule ^kaomoji/?$ /kaomoji.html [L,QSA]
+RewriteRule ^emoji/([^/]+)/?$ /emoji/$1.html [L,QSA]
+
+# 4. Custom 404 Handler
+ErrorDocument 404 /404.html
+
+# 5. Enable Gzip Compression for Fast PageSpeed
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript application/javascript application/json image/svg+xml
+</IfModule>
+
+# 6. Browser Caching Headers
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType image/svg+xml "access plus 1 month"
+  ExpiresByType text/css "access plus 1 week"
+  ExpiresByType application/javascript "access plus 1 week"
+</IfModule>

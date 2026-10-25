@@ -1,0 +1,16 @@
+{
+  "name": "funemojis",
+  "version": "2.2.0",
+  "description": "FunEmojis.app - 1-Click Emoji Keyboard, Directory, and Kaomoji",
+  "scripts": {
+    "build:pages": "node scripts/generate-emoji-pages.js"
+  },
+  "keywords": [
+    "emoji",
+    "kaomoji",
+    "emoticons",
+    "unicode"
+  ],
+  "author": "FunEmojis",
+  "license": "MIT"
+}

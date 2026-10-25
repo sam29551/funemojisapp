@@ -1,0 +1,6 @@
+# Cloudflare Pages / Netlify Redirects for FunEmojis.app
+/emoji-list   /emoji-list.html  200
+/generator    /generator.html   200
+/translator   /translator.html  200
+/kaomoji      /kaomoji.html     200
+/emoji/:slug  /emoji/:slug.html 200

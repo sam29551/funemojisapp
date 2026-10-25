@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Primary SEO Meta Tags -->
+  <title>Fun Emojis Keyboard - 1-Click Copy &amp; Paste Emojis</title>
+  <meta name="title" content="Fun Emojis Keyboard - 1-Click Copy &amp; Paste Emojis">
+  <meta name="description" content="Copy and paste emojis with 1-click on FunEmojis.app! Explore 1,000+ Unicode emojis, country flags, Japanese Kaomoji copy paste aesthetic, Fancy Fonts generator, and viral emoji combos for Instagram, TikTok, Discord, and WhatsApp.">
+  <meta name="keywords" content="emoji keyboard, emoji copy paste, copy paste emojis, emoji copy, emoji symbols, emoji symbols copy and paste, emoji combos, emoji combos copy and paste, emoji aesthetic copy paste, emoji meaning, kaomoji copy paste, kaomoji copy paste aesthetic, kaomoji cute, kaomoji aesthetic symbols, kaomoji sparkles, kaomoji keyboard, emojikeyboard, emojis list, unicode emoji list, fancy fonts generator, discord emojis copy paste, instagram emojis, tiktok emoji combos, funemojis.app">
+  <meta name="author" content="FunEmojis.app">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <meta name="revisit-after" content="1 days">
+  <meta name="language" content="English">
+  <meta name="distribution" content="global">
+  <meta name="rating" content="general">
+  <link rel="canonical" href="https://funemojis.app/">
+
+  <!-- Prevent search/query parameter pages from being indexed (fixes "Crawled not indexed" for 168+ URLs) -->
+  <script>
+    (function(){
+      var params = new URLSearchParams(window.location.search);
+      if (params.has('search') || params.has('q') || params.has('emoji')) {
+        var meta = document.querySelector('meta[name="robots"]');
+        if (meta) meta.setAttribute('content', 'noindex, follow');
+      }
+    })();
+  </script>
+
+  <!-- Open Graph / Facebook / WhatsApp / Discord -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://funemojis.app">
+  <meta property="og:title" content="Fun Emojis Keyboard - 1-Click Copy & Paste Emojis, Emojis List & Fonts">
+  <meta property="og:description" content="Copy 2,000+ trending emojis, complete Unicode emojis directory, cute Japanese kaomoji, fancy fonts, and aesthetic combos. Free, instant, and mobile friendly on FunEmojis.app.">
+  <meta property="og:image" content="https://funemojis.app/og-image.svg">
+  <meta property="og:image:type" content="image/svg+xml">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="FunEmojis.app - The Ultimate 1-Click Emoji Keyboard and Directory">
+  <meta property="og:site_name" content="FunEmojis.app">
+  <meta property="og:locale" content="en_US">
+
+  <!-- Twitter / X -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://funemojis.app">
+  <meta property="twitter:title" content="Fun Emojis Keyboard - Copy & Paste Emojis, Emojis List & Fancy Fonts">
+  <meta property="twitter:description" content="Quickly copy emojis, Unicode lists, fancy fonts, and cute kaomoji for your social media bios, chats, and messages.">
+  <meta property="twitter:image" content="https://funemojis.app/og-image.svg">
+  <meta property="twitter:image:alt" content="FunEmojis.app - 1-Click Emoji Keyboard Online">
+  <meta property="twitter:site" content="@funemojis_app">
+  <meta property="twitter:creator" content="@funemojis_app">
+
+  <!-- Performance Preconnects & DNS Prefetch -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="dns-prefetch" href="//fonts.googleapis.com">
+  <link rel="dns-prefetch" href="//fonts.gstatic.com">
+  <link rel="dns-prefetch" href="//cdn.tailwindcss.com">
+
+  <!-- Windows Country Flag Emoji Polyfill (renders real flags instead of two-letter ISO codes on Windows PCs) -->
+  <script type="module">
+    import { polyfillCountryFlagEmojis } from "https://cdn.skypack.dev/country-flag-emoji-polyfill";
+    polyfillCountryFlagEmojis();
+  </script>
+
+  <!-- Favicon & PWA -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✨</text></svg>">
+  <link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✨</text></svg>">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#4f46e5">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#eef2ff',
+              100: '#e0e7ff',
+              500: '#6366f1',
+              600: '#4f46e5',
+              700: '#4338ca',
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Google Fonts: Inter & JetBrains Mono -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="styles.css?v=2.2">
+
+  <!-- JSON-LD Structured Data Schema (SEO Supercharged) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://funemojis.app/#website",
+        "url": "https://funemojis.app",
+        "name": "FunEmojis.app",
+        "description": "The Ultimate 1-Click Emoji Keyboard, Emojis List Directory, and Fancy Fonts Generator.",
+        "publisher": {
+          "@type": "Organization",
+          "name": "FunEmojis.app",
+          "url": "https://funemojis.app",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://funemojis.app/og-image.svg"
+          }
+        },
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://funemojis.app/?q={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      },
+      {
+        "@type": "WebApplication",
+        "@id": "https://funemojis.app/#webapp",
+        "name": "Fun Emojis Keyboard",
+        "url": "https://funemojis.app",
+        "applicationCategory": "UtilitiesApplication",
+        "operatingSystem": "All (iOS, Android, Windows, macOS, Linux)",
+        "browserRequirements": "Requires JavaScript. Requires HTML5.",
+        "description": "FunEmojis.app provides a fast, interactive 1-click emoji keyboard, complete Unicode emojis list directory, Japanese kaomoji library, fancy text font generator, and aesthetic emoji combo maker for Instagram, TikTok, Discord, and WhatsApp.",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.9",
+          "ratingCount": "12840",
+          "bestRating": "5",
+          "worstRating": "1"
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://funemojis.app/#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://funemojis.app"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Emoji Keyboard",
+            "item": "https://funemojis.app/#tab-emojis"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Emojis List Directory",
+            "item": "https://funemojis.app/#tab-list"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Fancy Fonts",
+            "item": "https://funemojis.app/#tab-fonts"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://funemojis.app/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How do I copy and paste emojis on FunEmojis.app?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Simply click on any emoji, and it will be copied directly to your clipboard instantly with visual toast feedback. You can also type text and insert multiple emojis into the text workspace editor to copy complete sentences."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the Emojis List Directory on FunEmojis.app?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The Emojis List is a complete catalog of Unicode emojis with their official names, shortcodes, hexadecimal codepoints, and category filters for easy reference and one-click copying."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I use these emojis on Discord, Instagram, TikTok, and WhatsApp?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes! All emojis on FunEmojis.app are standard Unicode characters supported across iOS, Android, Windows, Mac, Discord, TikTok, Instagram captions, WhatsApp messages, and Twitter/X."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+
+<body class="bg-slate-50 text-slate-900 min-h-screen flex flex-col antialiased selection:bg-indigo-500 selection:text-white">
+
+  <!-- Header Navigation -->
+  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-200 transition-colors shadow-xs">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between gap-4">
+      
+      <!-- Brand Logo -->
+      <a href="https://funemojis.app" class="flex items-center gap-2.5 group" title="FunEmojis.app - Home">
+        <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-indigo-600 to-pink-500 flex items-center justify-center text-xl shadow-md group-hover:scale-105 transition-transform">
+          ✨
+        </div>
+        <div>
+          <span class="text-xl font-extrabold tracking-tight bg-gradient-to-r from-indigo-600 via-pink-500 to-rose-500 bg-clip-text text-transparent">
+            FunEmojis<span class="text-slate-800">.app</span>
+          </span>
+          <span class="hidden sm:block text-[10px] uppercase font-bold tracking-wider text-slate-400 -mt-1">
+            Emoji Keyboard & List
+          </span>
+        </div>
+      </a>
+
+      <!-- Main Navigation Tabs -->
+      <nav aria-label="Main Navigation" class="hidden md:flex items-center p-1 rounded-xl bg-slate-100 border border-slate-200/80 text-sm font-medium">
+        <button data-tab="emojis" class="nav-tab-btn active-tab px-3.5 py-1.5 rounded-lg flex items-center gap-1.5" title="Interactive Emoji Keyboard">
+          <span>😀</span> <span>Keyboard</span>
+        </button>
+        <a href="generator.html" class="px-3.5 py-1.5 rounded-lg flex items-center gap-1.5 text-indigo-600 hover:bg-white transition font-bold" title="Free Online Emoji & Font Generator">
+          <span>𝓕</span> <span>Generator</span>
+        </a>
+        <a href="emoji-list.html" class="px-3.5 py-1.5 rounded-lg flex items-center gap-1.5 text-slate-700 hover:bg-white transition font-semibold" title="Complete Emojis List Directory">
+          <span>📑</span> <span>Emojis List</span>
+        </a>
+        <a href="translator.html" class="px-3.5 py-1.5 rounded-lg flex items-center gap-1.5 text-slate-700 hover:bg-white transition font-semibold" title="Aesthetic Emoji Combos & Translator">
+          <span>✨💖</span> <span>Translator</span>
+        </a>
+        <button data-tab="kaomoji" class="nav-tab-btn px-3.5 py-1.5 rounded-lg flex items-center gap-1.5 text-slate-700" title="Japanese Kaomoji & Emoticons">
+          <span>(✿◠‿◠)</span> <span>Kaomoji</span>
+        </button>
+      </nav>
+
+      <!-- Right Header Actions (Language, Theme Toggle, Skin Tone) -->
+      <div class="flex items-center gap-2">
+        <!-- Quick Generator Button (Visible on Mobile) -->
+        <a href="generator.html" class="md:hidden px-2.5 py-1.5 rounded-lg bg-gradient-to-r from-indigo-600 to-pink-500 text-white text-xs font-bold flex items-center gap-1 shadow-sm" title="Open Generator">
+          <span>𝓕</span> <span>Generator</span>
+        </a>
+        
+        <!-- Language Switcher -->
+        <div class="relative flex items-center">
+          <select id="lang-select" class="appearance-none bg-slate-100 text-slate-700 text-xs font-semibold py-2 pl-2.5 pr-6 rounded-lg border border-slate-200 cursor-pointer focus:outline-none focus:ring-2 focus:ring-indigo-500 transition" title="Choose Language / زبان منتخب کریں">
+            <option value="en">🇺🇸 English</option>
+            <option value="es">🇪🇸 Español</option>
+            <option value="fr">🇫🇷 Français</option>
+            <option value="de">🇩🇪 Deutsch</option>
+            <option value="it">🇮🇹 Italiano</option>
+            <option value="pt">🇵🇹 Português</option>
+            <option value="ar">🇸🇦 العربية</option>
+            <option value="ur">🇵🇰 اردو / हिन्दी</option>
+            <option value="ja">🇯🇵 日本語</option>
+          </select>
+          <div class="pointer-events-none absolute right-2 text-slate-400 text-[10px]">▼</div>
+        </div>
+
+        <!-- Skin Tone Picker -->
+        <div class="relative hidden sm:flex items-center">
+          <select id="skin-tone-select" class="appearance-none bg-slate-100 text-slate-700 text-xs font-semibold py-2 pl-3 pr-7 rounded-lg border border-slate-200 cursor-pointer focus:outline-none focus:ring-2 focus:ring-indigo-500 transition" title="Choose Skin Tone (Fitzpatrick Scale)">
+            <option value="default">🟨 Default Tone</option>
+            <option value="light">🏻 Light Tone</option>
+            <option value="medium-light">🏼 Medium-Light</option>
+            <option value="medium">🏽 Medium Tone</option>
+            <option value="medium-dark">🏾 Medium-Dark</option>
+            <option value="dark">🏿 Dark Tone</option>
+          </select>
+          <div class="pointer-events-none absolute right-2 text-slate-400 text-[10px]">▼</div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Mobile Nav Sub-Bar -->
+    <div class="md:hidden flex flex-wrap items-center justify-center px-2 py-2 border-t border-slate-200 bg-slate-50 text-xs gap-1.5">
+      <button data-tab="emojis" class="nav-tab-btn active-tab py-1 px-2.5 rounded-md whitespace-nowrap">😀 Keyboard</button>
+      <button data-tab="list" class="nav-tab-btn py-1 px-2.5 rounded-md whitespace-nowrap">📑 List</button>
+      <button data-tab="kaomoji" class="nav-tab-btn py-1 px-2.5 rounded-md whitespace-nowrap">(✿◠‿◠) Kaomoji</button>
+      <button data-tab="fonts" class="nav-tab-btn py-1 px-2.5 rounded-md whitespace-nowrap">𝓕 Fonts</button>
+      <button data-tab="combos" class="nav-tab-btn py-1 px-2.5 rounded-md whitespace-nowrap">✨ Combos</button>
+    </div>
+  </header>
+
+  <!-- Main Container -->
+  <main class="flex-grow max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-4">
+
+    <!-- Clean Minimalist Hero (emojiskeyboard style) -->
+    <section class="pt-2 pb-5 text-center max-w-4xl mx-auto px-4" aria-label="Welcome">
+      <h1 class="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-slate-900 leading-tight mb-2.5">
+        Emojis Keyboard 😍 — Copy &amp; Paste 2,000+ Emojis Online
+      </h1>
+      <p class="text-sm sm:text-base text-slate-500 max-w-2xl mx-auto mb-4 leading-relaxed">
+        Free online emoji keyboard with 2,000+ emojis to copy and paste instantly. Fast, clean, and mobile-friendly for Instagram, TikTok, Discord, and WhatsApp.
+      </p>
+      <div class="flex flex-wrap items-center justify-center gap-2">
+        <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white border border-slate-200 text-xs font-semibold text-slate-600 shadow-xs"><span>✨</span> 2,000+ Emojis</span>
+        <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white border border-slate-200 text-xs font-semibold text-slate-600 shadow-xs"><span>⚡</span> 1-Click Copy</span>
+        <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white border border-slate-200 text-xs font-semibold text-slate-600 shadow-xs"><span>🔍</span> Smart Search</span>
+        <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white border border-slate-200 text-xs font-semibold text-slate-600 shadow-xs"><span>📱</span> Mobile Friendly</span>
+      </div>
+    </section>
+
+    <!-- Sticky Message Builder (Desktop - emojiskeyboard style) -->
+    <section id="emoji-builder-desktop" class="sticky top-16 z-30 hidden md:block bg-white/95 backdrop-blur-md border border-slate-200 rounded-2xl shadow-xs py-2 px-3 sm:px-4 mb-6 transition">
+      <div class="flex items-center gap-2.5">
+        <div class="flex-1 relative">
+          <input
+            type="text"
+            id="emoji-builder-input"
+            class="w-full h-10 py-2 px-3.5 text-base rounded-xl border border-slate-200 bg-slate-50 text-slate-900 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 font-emoji transition"
+            placeholder="Click emojis below to build your message here..."
+            aria-label="Composed emoji message"
+          >
+        </div>
+        <div class="flex items-center gap-1.5 shrink-0">
+          <button id="builder-space-btn" class="hidden sm:inline-flex items-center justify-center px-3 h-10 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 font-semibold text-xs border border-slate-200 transition cursor-pointer" title="Add Space">
+            Space
+          </button>
+          <button id="builder-backspace-btn" class="inline-flex items-center justify-center px-3 h-10 rounded-xl bg-slate-100 hover:bg-red-50 hover:text-red-600 text-slate-700 font-semibold text-xs border border-slate-200 transition cursor-pointer" title="Backspace">
+            ⌫
+          </button>
+          <button id="builder-copy-btn" class="inline-flex items-center gap-1.5 px-4 h-10 rounded-xl bg-indigo-600 hover:bg-indigo-700 active:scale-95 text-white font-bold text-xs sm:text-sm shadow-xs transition cursor-pointer" title="Copy all emojis to clipboard">
+            <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3"/></svg>
+            <span id="builder-copy-text">Copy All</span>
+          </button>
+          <button id="builder-clear-btn" class="inline-flex items-center justify-center px-3.5 h-10 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-600 font-semibold text-xs border border-slate-200 transition cursor-pointer" title="Clear message">
+            Clear
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- TAB 1: EMOJIS KEYBOARD SECTION -->
+    <section id="tab-emojis" class="tab-content" aria-label="Emoji Keyboard">
+      
+      <!-- Search & Controls Toolbar -->
+      <div class="mb-3 flex flex-col md:flex-row items-stretch md:items-center justify-between gap-4">
+        
+        <!-- Search Input -->
+        <div class="relative flex-grow">
+          <div class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-slate-400">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+          </div>
+          <input
+            type="text"
+            id="search-input"
+            class="w-full pl-10 pr-20 py-3 rounded-xl bg-white border border-slate-200 text-slate-900 placeholder-slate-400 focus:ring-2 focus:ring-indigo-500 focus:outline-none shadow-sm transition"
+            placeholder="Search emojis by name or keyword (e.g. fire, happy, heart, cat, skull, car)..."
+            aria-label="Search emojis"
+          >
+          <div class="absolute inset-y-0 right-0 pr-3 flex items-center gap-1.5">
+            <button id="clear-search-btn" class="hidden text-xs text-slate-400 hover:text-slate-600 p-1" aria-label="Clear Search">✕</button>
+            <span class="hidden sm:inline-block px-1.5 py-0.5 rounded border border-slate-200 text-[10px] font-mono text-slate-400">/</span>
+          </div>
+        </div>
+
+        <!-- Grid Size Toggles & Badge -->
+        <div class="flex items-center justify-between sm:justify-end gap-3 flex-shrink-0">
+          <div class="flex items-center p-1 rounded-lg bg-white border border-slate-200 shadow-sm text-xs font-semibold">
+            <button class="size-toggle-btn px-2.5 py-1 rounded" data-size="compact" title="Compact view">S</button>
+            <button class="size-toggle-btn px-2.5 py-1 rounded bg-indigo-100 text-indigo-600" data-size="standard" title="Standard view">M</button>
+            <button class="size-toggle-btn px-2.5 py-1 rounded" data-size="large" title="Large view">L</button>
+          </div>
+          <span id="emoji-count-badge" class="px-3 py-1.5 rounded-lg bg-slate-100 text-xs font-bold text-slate-600 border border-slate-200">
+            0 emojis
+          </span>
+        </div>
+
+      </div>
+
+      <!-- Trending Quick Search Chips -->
+      <div class="mb-5 flex flex-wrap items-center gap-1.5 text-xs">
+        <span class="text-slate-400 font-semibold flex items-center gap-1 mr-1">
+          <span>🔥</span> <span>Trending:</span>
+        </span>
+        <button class="trending-chip px-2.5 py-1 rounded-lg bg-white hover:bg-indigo-50 hover:text-indigo-600 border border-slate-200 text-slate-700 transition font-medium shadow-xs" data-query="fire">🔥 Fire</button>
+        <button class="trending-chip px-2.5 py-1 rounded-lg bg-white hover:bg-pink-50 hover:text-pink-600 border border-slate-200 text-slate-700 transition font-medium shadow-xs" data-query="heart">❤️ Heart</button>
+        <button class="trending-chip px-2.5 py-1 rounded-lg bg-white hover:bg-slate-100 hover:text-slate-900 border border-slate-200 text-slate-700 transition font-medium shadow-xs" data-query="skull">💀 Skull</button>
+        <button class="trending-chip px-2.5 py-1 rounded-lg bg-white hover:bg-amber-50 hover:text-amber-600 border border-slate-200 text-slate-700 transition font-medium shadow-xs" data-query="sparkles">✨ Sparkles</button>
+        <button class="trending-chip px-2.5 py-1 rounded-lg bg-white hover:bg-blue-50 hover:text-blue-600 border border-slate-200 text-slate-700 transition font-medium shadow-xs" data-query="laugh">😂 Laugh</button>
+        <button class="trending-chip px-2.5 py-1 rounded-lg bg-white hover:bg-purple-50 hover:text-purple-600 border border-slate-200 text-slate-700 transition font-medium shadow-xs" data-query="plead">🥺 Puppy Eyes</button>
+        <button class="trending-chip px-2.5 py-1 rounded-lg bg-white hover:bg-slate-100 hover:text-slate-900 border border-slate-200 text-slate-700 transition font-medium shadow-xs" data-query="moai">🗿 Moai</button>
+        <button class="trending-chip px-2.5 py-1 rounded-lg bg-white hover:bg-rose-50 hover:text-rose-600 border border-slate-200 text-slate-700 transition font-medium shadow-xs" data-query="love">🫶 Heart Hands</button>
+        <button class="trending-chip px-2.5 py-1 rounded-lg bg-white hover:bg-emerald-50 hover:text-emerald-600 border border-slate-200 text-slate-700 transition font-medium shadow-xs" data-query="party">🎉 Party</button>
+        <button class="trending-chip px-2.5 py-1 rounded-lg bg-white hover:bg-indigo-50 hover:text-indigo-600 border border-slate-200 text-slate-700 transition font-medium shadow-xs" data-query="cat">🐱 Cat</button>
+      </div>
+
+      <!-- Main Layout: Left Sidebar (Desktop) + Right Emojis Container -->
+      <div class="flex items-start gap-6">
+
+        <!-- Desktop Sticky Category Sidebar (emojiskeyboard style) -->
+        <aside id="desktop-category-sidebar" class="hidden lg:block sticky top-36 w-60 shrink-0 max-h-[calc(100vh-170px)] overflow-y-auto p-3 rounded-2xl bg-white/90 backdrop-blur-md border border-slate-200/80 shadow-sm" aria-label="Emoji Categories">
+          <div class="text-[11px] font-extrabold uppercase tracking-wider text-slate-400 px-3 pb-2">
+            Categories
+          </div>
+          <nav id="sidebar-category-nav" class="flex flex-col gap-1">
+            <!-- Dynamically populated and highlighted by JS -->
+          </nav>
+        </aside>
+
+        <!-- Main Emoji Area -->
+        <div class="flex-1 min-w-0">
+          <!-- Favorites Section -->
+          <div id="favorites-section" class="mb-6 hidden">
+            <div class="flex items-center gap-2 mb-2.5">
+              <span class="text-red-500 font-bold">❤️</span>
+              <h2 class="text-sm font-bold uppercase tracking-wider text-slate-600">Your Favorites</h2>
+            </div>
+            <div id="favorites-container" class="flex flex-wrap gap-2 p-3 rounded-xl bg-pink-50/50 border border-pink-100">
+              <!-- Populated by JS -->
+            </div>
+          </div>
+
+          <!-- Recently Copied Section -->
+          <div id="recents-section" class="mb-6 hidden">
+            <div class="flex items-center gap-2 mb-2.5">
+              <span class="text-indigo-500 font-bold">🕒</span>
+              <h2 class="text-sm font-bold uppercase tracking-wider text-slate-600">Recently Copied</h2>
+            </div>
+            <div id="recents-container" class="flex flex-wrap gap-2 p-3 rounded-xl bg-indigo-50/50 border border-indigo-100">
+              <!-- Populated by JS -->
+            </div>
+          </div>
+
+          <!-- Categories Pills Grid (Visible on mobile/tablet) -->
+          <div class="lg:hidden mb-6">
+            <div id="category-pills" class="flex flex-wrap items-center gap-2">
+              <!-- Categories rendered by JS -->
+            </div>
+          </div>
+
+          <!-- Emoji Main Sections / Grid Container -->
+          <div id="emoji-grid" class="space-y-8">
+            <!-- Emojis dynamically injected category-wise by JS -->
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- TAB 2: EMOJIS LIST DIRECTORY (TABLE / LIST VIEW) -->
+    <section id="tab-list" class="tab-content hidden" aria-label="Emojis List Directory">
+      <div class="mb-6 flex flex-col md:flex-row md:items-center justify-between gap-4">
+        <div>
+          <h2 class="text-2xl font-extrabold text-slate-900 flex items-center gap-2">
+            <span>📑 Complete Unicode Emojis List &amp; Directory</span>
+          </h2>
+          <p class="text-sm text-slate-500 mt-1">
+            Browse all official Unicode emojis with names, shortcodes, and hexadecimal codepoints for copy &amp; paste.
+          </p>
+        </div>
+
+        <span id="list-count-badge" class="self-start md:self-auto px-3.5 py-1.5 rounded-lg bg-indigo-50 text-xs font-bold text-indigo-600 border border-indigo-100">
+          Loading Directory...
+        </span>
+      </div>
+
+      <!-- List Filters Toolbar -->
+      <div class="mb-6 grid grid-cols-1 sm:grid-cols-3 gap-3">
+        <!-- List Search -->
+        <div class="sm:col-span-2 relative">
+          <input
+            type="text"
+            id="list-search-input"
+            class="w-full pl-4 pr-10 py-2.5 rounded-xl bg-white border border-slate-200 text-slate-900 placeholder-slate-400 focus:ring-2 focus:ring-indigo-500 focus:outline-none text-sm shadow-sm"
+            placeholder="Search directory by name, shortcode (:smile:), or unicode (U+1F600)..."
+            aria-label="Search emojis list directory"
+          >
+        </div>
+
+        <!-- List Category Filter -->
+        <div>
+          <select id="list-category-select" class="w-full py-2.5 px-3 rounded-xl bg-white border border-slate-200 text-slate-700 text-sm font-medium focus:ring-2 focus:ring-indigo-500 focus:outline-none cursor-pointer shadow-sm" aria-label="Filter directory by category">
+            <option value="all">✨ All Categories</option>
+            <option value="smileys">😀 Smileys &amp; Emotion</option>
+            <option value="people">👋 People &amp; Body</option>
+            <option value="animals">🐱 Animals &amp; Nature</option>
+            <option value="food">🍕 Food &amp; Drink</option>
+            <option value="travel">✈️ Travel &amp; Places</option>
+            <option value="activities">⚽ Activities &amp; Sports</option>
+            <option value="objects">💡 Objects &amp; Tools</option>
+            <option value="symbols">❤️ Symbols &amp; Signs</option>
+            <option value="flags">🚩 Flags</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- List Directory Table -->
+      <div class="overflow-x-auto rounded-2xl border border-slate-200 bg-white shadow-sm">
+        <table class="w-full text-left border-collapse">
+          <thead>
+            <tr class="border-b border-slate-200 bg-slate-50 text-xs font-bold uppercase tracking-wider text-slate-500">
+              <th class="py-3 px-4 text-center w-16">Emoji</th>
+              <th class="py-3 px-4">Name &amp; Keywords</th>
+              <th class="py-3 px-4 hidden md:table-cell">Category</th>
+              <th class="py-3 px-4 hidden sm:table-cell">Shortcode &amp; Code</th>
+              <th class="py-3 px-4 text-right">Action</th>
+            </tr>
+          </thead>
+          <tbody id="list-table-body" class="divide-y divide-slate-100">
+            <!-- Populated by JS -->
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- TAB 3: KAOMOJI SECTION -->
+    <section id="tab-kaomoji" class="tab-content hidden" aria-label="Japanese Kaomoji">
+      <div class="mb-6">
+        <h2 class="text-2xl font-extrabold text-slate-900">Kaomoji Copy Paste — Cute &amp; Aesthetic Emoticons</h2>
+        <p class="text-sm text-slate-500 mt-1">
+          1-Click Kaomoji copy and paste for aesthetic bios, Discord, TikTok, and Instagram. Explore cute kaomoji, cat faces, sparkles, star symbols, hearts, love, sad, and happy Japanese emoticons.
+        </p>
+      </div>
+      <div id="kaomoji-container">
+        <!-- Rendered by JS -->
+      </div>
+    </section>
+
+    <!-- TAB 4: FANCY FONTS GENERATOR -->
+    <section id="tab-fonts" class="tab-content hidden" aria-label="Fancy Fonts Generator">
+      <div class="mb-6">
+        <h2 class="text-2xl font-extrabold text-slate-900">Cool Fancy Fonts Generator</h2>
+        <p class="text-sm text-slate-500 mt-1">
+          Type your custom text below to instantly convert it into aesthetic Unicode fonts for Instagram bio, TikTok usernames, and gaming nicknames.
+        </p>
+      </div>
+
+      <div class="mb-6">
+        <label for="font-custom-input" class="block text-xs font-bold uppercase tracking-wider text-slate-500 mb-2">Type your text here:</label>
+        <input
+          type="text"
+          id="font-custom-input"
+          class="w-full p-4 text-lg rounded-xl bg-white border border-slate-200 text-slate-900 placeholder-slate-400 focus:ring-2 focus:ring-indigo-500 focus:outline-none shadow-sm"
+          value="Fun Emojis Keyboard"
+          placeholder="Type something cool..."
+          aria-label="Fancy Font Input Text"
+        >
+      </div>
+
+      <div id="fancy-fonts-container" class="space-y-3">
+        <!-- Rendered by JS -->
+      </div>
+    </section>
+
+    <!-- TAB 5: EMOJI COMBOS SECTION -->
+    <section id="tab-combos" class="tab-content hidden" aria-label="Emoji Combos">
+      <div class="mb-6">
+        <h2 class="text-2xl font-extrabold text-slate-900">Aesthetic Emoji Combos &amp; Copy Paste</h2>
+        <p class="text-sm text-slate-500 mt-1">
+          Curated aesthetic emoji combos, emoji symbols, and viral combinations ready to copy and paste for your social media bios, captions, and chats.
+        </p>
+      </div>
+      <div id="combos-container">
+        <!-- Rendered by JS -->
+      </div>
+    </section>
+
+    <!-- COMPREHENSIVE SEO CONTENT & SEARCH INTENT TARGETING -->
+    <article class="mt-16 pt-12 border-t border-slate-200 space-y-12">
+      
+      <!-- Feature Cards Grid -->
+      <section>
+        <div class="text-center max-w-2xl mx-auto mb-10">
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900">
+            Why Choose <span class="gradient-text">FunEmojis.app</span>?
+          </h2>
+          <p class="text-sm text-slate-500 mt-2">
+            The world's fastest, zero-lag emoji keyboard, directory list, and text toolkit designed for content creators, gamers, and everyday messaging.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div class="p-6 rounded-2xl bg-white border border-slate-200 shadow-sm">
+            <div class="text-3xl mb-3">⚡</div>
+            <h3 class="text-lg font-bold text-slate-900 mb-2">Instant 1-Click Copy</h3>
+            <p class="text-sm text-slate-600 leading-relaxed">
+              No need to highlight and press Ctrl+C. Just click any emoji, kaomoji, or font style to copy it straight to your clipboard with instant feedback.
+            </p>
+          </div>
+
+          <div class="p-6 rounded-2xl bg-white border border-slate-200 shadow-sm">
+            <div class="text-3xl mb-3">📑</div>
+            <h3 class="text-lg font-bold text-slate-900 mb-2">Complete Emojis Directory</h3>
+            <p class="text-sm text-slate-600 leading-relaxed">
+              Access the full Unicode emojis list with codepoints, shortcodes, meaning descriptions, and quick search filters.
+            </p>
+          </div>
+
+          <div class="p-6 rounded-2xl bg-white border border-slate-200 shadow-sm">
+            <div class="text-3xl mb-3">🎨</div>
+            <h3 class="text-lg font-bold text-slate-900 mb-2">All-in-One Text Toolkit</h3>
+            <p class="text-sm text-slate-600 leading-relaxed">
+              Beyond emojis, generate stylish fancy fonts, copy expressive Japanese kaomoji emoticons, and build custom text messages inside our built-in workspace.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Trending Emojis Section -->
+      <section class="space-y-4">
+        <h2 class="text-2xl font-extrabold text-slate-900 flex items-center gap-2">
+          <span>🔥 Trending Emojis for Instagram, TikTok, Discord &amp; WhatsApp</span>
+        </h2>
+        <p class="text-sm text-slate-600 leading-relaxed">
+          Emojis have become an essential part of online communication, social media marketing, and community building. On <strong>FunEmojis.app</strong>, you can quickly copy the most viral emojis used across platforms:
+        </p>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 text-xs">
+          <div class="p-4 rounded-xl bg-white border border-slate-200 space-y-1">
+            <span class="font-bold text-indigo-600 block text-sm">📸 Instagram Captions</span>
+            <p class="text-slate-500">✨ 💖 🌸 🌴 ☕ 🔥 🤍 📸 🦋 🏖️ — Perfect for aesthetic travel photos, coffee vibes, and fashion reels.</p>
+          </div>
+          <div class="p-4 rounded-xl bg-white border border-slate-200 space-y-1">
+            <span class="font-bold text-pink-600 block text-sm">🎵 TikTok &amp; Viral Slang</span>
+            <p class="text-slate-500">💀 🗿 🍷 😭 💅 🫠 🤡 🧢 💯 — Ideal for comments, meme reactions, roasts, and trending video sounds.</p>
+          </div>
+          <div class="p-4 rounded-xl bg-white border border-slate-200 space-y-1">
+            <span class="font-bold text-purple-600 block text-sm">🎮 Discord Servers</span>
+            <p class="text-slate-500">👑 🚀 👾 🎮 🛡️ ⚔️ 💎 🎧 🎯 — Used for custom channel names, role rewards, and gaming tags.</p>
+          </div>
+          <div class="p-4 rounded-xl bg-white border border-slate-200 space-y-1">
+            <span class="font-bold text-emerald-600 block text-sm">💬 WhatsApp &amp; Chats</span>
+            <p class="text-slate-500">❤️ 😂 🥺 🙏 🥰 🎂 🥂 👍 🤝 — Great for quick daily family messages, greetings, and group chats.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Emoji Keyboard Shortcuts Guide -->
+      <section class="p-6 sm:p-8 rounded-2xl bg-indigo-50/70 border border-indigo-100">
+        <h2 class="text-xl sm:text-2xl font-extrabold text-slate-900 mb-4">
+          💡 How to Open the Emoji Keyboard on Any Device
+        </h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 text-sm">
+          <div class="p-4 rounded-xl bg-white border border-slate-200">
+            <span class="font-bold text-indigo-600 block mb-1">Windows PC</span>
+            Press <kbd class="px-1.5 py-0.5 rounded bg-slate-100 border font-mono">Win</kbd> + <kbd class="px-1.5 py-0.5 rounded bg-slate-100 border font-mono">.</kbd> or <kbd class="px-1.5 py-0.5 rounded bg-slate-100 border font-mono">Win</kbd> + <kbd class="px-1.5 py-0.5 rounded bg-slate-100 border font-mono">;</kbd> to open Windows emoji picker.
+          </div>
+          <div class="p-4 rounded-xl bg-white border border-slate-200">
+            <span class="font-bold text-indigo-600 block mb-1">Mac (Apple)</span>
+            Press <kbd class="px-1.5 py-0.5 rounded bg-slate-100 border font-mono">Cmd</kbd> + <kbd class="px-1.5 py-0.5 rounded bg-slate-100 border font-mono">Ctrl</kbd> + <kbd class="px-1.5 py-0.5 rounded bg-slate-100 border font-mono">Space</kbd> for the Character Viewer.
+          </div>
+          <div class="p-4 rounded-xl bg-white border border-slate-200">
+            <span class="font-bold text-indigo-600 block mb-1">FunEmojis.app Web</span>
+            Use our web keyboard anywhere with search, skin tones, favorites, and 1-click clipboard copy!
+          </div>
+        </div>
+      </section>
+
+      <!-- Emoji Generator & Translator Keyword Section (High Search Demand) -->
+      <section class="p-6 sm:p-8 rounded-2xl bg-gradient-to-r from-purple-50 via-indigo-50 to-pink-50 border border-indigo-100/80">
+        <div class="max-w-3xl">
+          <span class="inline-block px-3 py-1 rounded-full bg-indigo-100 text-indigo-700 text-xs font-bold uppercase tracking-wider mb-3">
+            ⚡ All-in-One Generator &amp; Translator
+          </span>
+          <h2 class="text-xl sm:text-2xl font-extrabold text-slate-900 mb-3">
+            Free Online Emoji Generator &amp; Text to Emoji Translator
+          </h2>
+          <p class="text-sm text-slate-600 leading-relaxed mb-4">
+            Looking for a fast <strong>emoji generator</strong> or want to <strong>translate text to emojis</strong>? <strong>FunEmojis.app</strong> gives you the ultimate creative toolkit: convert standard text into expressive emojis, find popular icons like the <em>Shopping Cart Emoji (🛒)</em>, <em>Egg Emoji (🥚)</em>, <em>Bank Emoji (🏦)</em>, and uncover party popper (🎉) meanings. Perfect for generating funny emoji copy and paste captions for Instagram, TikTok bios, Discord servers, and WhatsApp statuses.
+          </p>
+          <div class="flex flex-wrap gap-2 text-xs font-semibold">
+            <a href="#tab-fonts" onclick="switchTab('fonts'); return false;" class="px-3 py-1.5 rounded-lg bg-white shadow-sm border border-slate-200 text-indigo-600 hover:bg-indigo-50 transition">
+              ✍️ Fancy Text Generator
+            </a>
+            <a href="#tab-combos" onclick="switchTab('combos'); return false;" class="px-3 py-1.5 rounded-lg bg-white shadow-sm border border-slate-200 text-purple-600 hover:bg-purple-50 transition">
+              ✨ Viral Combos Generator
+            </a>
+            <a href="#tab-list" onclick="switchTab('list'); return false;" class="px-3 py-1.5 rounded-lg bg-white shadow-sm border border-slate-200 text-pink-600 hover:bg-pink-50 transition">
+              📑 Emojis Directory
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ Accordion for Rich Snippet SEO -->
+      <section class="space-y-4" id="faq">
+        <div class="text-center max-w-2xl mx-auto mb-6">
+          <h2 class="text-2xl font-extrabold text-slate-900">Frequently Asked Questions</h2>
+          <p class="text-sm text-slate-500">Everything you need to know about FunEmojis.app.</p>
+        </div>
+
+        <div class="space-y-3 max-w-3xl mx-auto">
+          <details class="p-4 rounded-xl bg-white border border-slate-200 shadow-sm cursor-pointer group">
+            <summary class="font-bold text-slate-800 flex items-center justify-between">
+              <span>Is FunEmojis.app completely free to use?</span>
+              <svg class="w-5 h-5 text-slate-400 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+            </summary>
+            <p class="text-sm text-slate-600 mt-2.5 leading-relaxed">
+              Yes, FunEmojis.app is 100% free with no registration, subscription, or software installation needed. You can bookmark this page and use it on any browser.
+            </p>
+          </details>
+
+          <details class="p-4 rounded-xl bg-white border border-slate-200 shadow-sm cursor-pointer group">
+            <summary class="font-bold text-slate-800 flex items-center justify-between">
+              <span>What is the Emojis List Directory?</span>
+              <svg class="w-5 h-5 text-slate-400 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+            </summary>
+            <p class="text-sm text-slate-600 mt-2.5 leading-relaxed">
+              The Emojis List tab provides a structured directory table containing all emojis, official Unicode names, shortcodes, and hexadecimal code points for developers, designers, and social media managers.
+            </p>
+          </details>
+
+          <details class="p-4 rounded-xl bg-white border border-slate-200 shadow-sm cursor-pointer group">
+            <summary class="font-bold text-slate-800 flex items-center justify-between">
+              <span>Can I use these emojis on Discord and Instagram?</span>
+              <svg class="w-5 h-5 text-slate-400 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+            </summary>
+            <p class="text-sm text-slate-600 mt-2.5 leading-relaxed">
+              Absolutely. Our emojis and fancy fonts are standard Unicode symbols that work seamlessly in Discord server chats, role names, Instagram bios, TikTok captions, Facebook statuses, and WhatsApp chats.
+            </p>
+          </details>
+
+          <details class="p-4 rounded-xl bg-white border border-slate-200 shadow-sm cursor-pointer group">
+            <summary class="font-bold text-slate-800 flex items-center justify-between">
+              <span>Where can I find emoji symbols copy and paste and aesthetic emoji combos?</span>
+              <svg class="w-5 h-5 text-slate-400 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+            </summary>
+            <p class="text-sm text-slate-600 mt-2.5 leading-relaxed">
+              You can browse our <strong>Symbols & Signs</strong> category for instant 1-click <em>emoji symbols copy and paste</em> (hearts, arrows, zodiac, math signs), or switch to the <strong>Combos</strong> tab for viral <em>aesthetic emoji combos copy and paste</em> designed for bios and social posts.
+            </p>
+          </details>
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+  <!-- Emoji Details Modal Popup -->
+  <div id="emoji-modal" class="fixed inset-0 z-50 flex items-center justify-center p-4 hidden" role="dialog" aria-modal="true" aria-labelledby="modal-emoji-name">
+    <div id="modal-backdrop" class="fixed inset-0 bg-slate-900/60 backdrop-blur-sm transition-opacity"></div>
+    <div class="relative w-full max-w-md p-6 bg-white rounded-3xl shadow-2xl border border-slate-200 z-10">
+      <button id="close-modal-btn" class="absolute top-4 right-4 text-slate-400 hover:text-slate-600 p-1.5 rounded-full hover:bg-slate-100 transition" aria-label="Close emoji modal">
+        ✕
+      </button>
+
+      <div class="text-center mb-6">
+        <div id="modal-emoji-char" class="text-6xl sm:text-7xl mb-3 select-all">😀</div>
+        <h3 id="modal-emoji-name" class="text-xl font-bold text-slate-900">Grinning Face</h3>
+        <span id="modal-emoji-category" class="inline-block mt-1 text-xs font-semibold px-2.5 py-1 rounded-full bg-indigo-50 text-indigo-600 border border-indigo-100">
+          Smileys &amp; Emotion
+        </span>
+      </div>
+
+      <div class="space-y-3 mb-6">
+        <div class="flex items-center justify-between p-3 rounded-xl bg-slate-50 border border-slate-100">
+          <span class="text-xs text-slate-400">Shortcode:</span>
+          <span id="modal-emoji-shortcode" class="font-mono text-xs font-semibold text-indigo-600">:grinning:</span>
+        </div>
+        <div class="flex items-center justify-between p-3 rounded-xl bg-slate-50 border border-slate-100">
+          <span class="text-xs text-slate-400">Unicode:</span>
+          <span id="modal-emoji-code" class="font-mono text-xs font-semibold text-slate-700">U+1F600</span>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-2 gap-2.5">
+        <button id="modal-copy-char-btn" class="py-2.5 px-3 rounded-xl bg-indigo-600 hover:bg-indigo-700 text-white text-xs font-bold shadow-sm transition flex items-center justify-center gap-1.5">
+          <span>📋</span> <span>Copy Emoji</span>
+        </button>
+        <button id="modal-copy-shortcode-btn" class="py-2.5 px-3 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-800 text-xs font-bold transition">
+          Copy Shortcode
+        </button>
+        <button id="modal-copy-code-btn" class="py-2.5 px-3 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-800 text-xs font-bold transition">
+          Copy Unicode
+        </button>
+        <button id="modal-insert-btn" class="py-2.5 px-3 rounded-xl bg-pink-500 hover:bg-pink-600 text-white text-xs font-bold transition">
+          ✍️ Add to Editor
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="mt-16 bg-white border-t border-slate-200 transition-colors">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 mb-8">
+        
+        <!-- Brand Info -->
+        <div class="space-y-3">
+          <div class="flex items-center gap-2">
+            <div class="w-8 h-8 rounded-lg bg-gradient-to-tr from-indigo-600 to-pink-500 flex items-center justify-center text-lg shadow-sm">
+              ✨
+            </div>
+            <span class="text-lg font-bold text-slate-900">FunEmojis.app</span>
+          </div>
+          <p class="text-xs text-slate-500 leading-relaxed">
+            The free, fast, and comprehensive online emoji keyboard, Unicode emojis list directory, and kaomoji copier.
+          </p>
+        </div>
+
+        <!-- Quick Categories -->
+        <div>
+          <h4 class="text-xs font-bold uppercase tracking-wider text-slate-900 mb-3">Categories</h4>
+          <ul class="space-y-2 text-xs text-slate-500">
+            <li><a href="#category-smileys" onclick="jumpToCategory('smileys'); return false;" class="hover:text-indigo-600 transition">😀 Smileys &amp; Emotion</a></li>
+            <li><a href="#category-people" onclick="jumpToCategory('people'); return false;" class="hover:text-indigo-600 transition">👋 People &amp; Body</a></li>
+            <li><a href="#category-animals" onclick="jumpToCategory('animals'); return false;" class="hover:text-indigo-600 transition">🐱 Animals &amp; Nature</a></li>
+            <li><a href="#category-food" onclick="jumpToCategory('food'); return false;" class="hover:text-indigo-600 transition">🍕 Food &amp; Drink</a></li>
+            <li><a href="#category-activities" onclick="jumpToCategory('activities'); return false;" class="hover:text-indigo-600 transition">⚽ Activities &amp; Sports</a></li>
+            <li><a href="#category-flags" onclick="jumpToCategory('flags'); return false;" class="hover:text-indigo-600 transition">🚩 Country Flags</a></li>
+          </ul>
+        </div>
+
+        <!-- Extra Tools -->
+        <div>
+          <h4 class="text-xs font-bold uppercase tracking-wider text-slate-900 mb-3">Tools &amp; Directories</h4>
+          <ul class="space-y-2 text-xs text-slate-500">
+            <li><a href="emoji-list.html" class="hover:text-indigo-600 transition">📑 Emojis List Directory</a></li>
+            <li><a href="kaomoji.html" class="hover:text-indigo-600 transition">🌸 Japanese Kaomoji</a></li>
+            <li><a href="generator.html" class="hover:text-indigo-600 transition">𝓕 Cool Fancy Fonts</a></li>
+            <li><a href="translator.html" class="hover:text-indigo-600 transition">✨ Aesthetic Combos</a></li>
+          </ul>
+        </div>
+
+        <!-- Company & Legal -->
+        <div>
+          <h4 class="text-xs font-bold uppercase tracking-wider text-slate-900 mb-3">Company &amp; Legal</h4>
+          <ul class="space-y-2 text-xs text-slate-500">
+            <li><a href="about.html" class="hover:text-indigo-500 transition">About Us</a></li>
+            <li><a href="contact.html" class="hover:text-indigo-500 transition">Contact Us</a></li>
+            <li><a href="privacy-policy.html" class="hover:text-indigo-500 transition">Privacy Policy</a></li>
+            <li><a href="terms-of-service.html" class="hover:text-indigo-500 transition">Terms of Service</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="pt-6 border-t border-slate-100 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-400 gap-2">
+        <p>&copy; 2026 FunEmojis.app. All rights reserved. Unicode Emoji Keyboard &amp; List.</p>
+        <p>Crafted for speed, simplicity, and viral social formatting.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Mobile Fixed Bottom Action Bar (emojiskeyboard style) -->
+  <aside id="emoji-builder-mobile" class="block md:hidden fixed bottom-0 inset-x-0 z-40 bg-white/95 backdrop-blur-md border-t border-slate-200 shadow-[0_-4px_20px_rgba(0,0,0,0.08)] px-3 pt-2">
+    <!-- Top Row: Quick Category Icons Scroll -->
+    <div id="mobile-cat-nav" class="flex items-center gap-1.5 overflow-x-auto scrollbar-hide pb-2">
+      <button id="mobile-search-btn" class="flex items-center justify-center min-w-[34px] h-8 rounded-lg border border-slate-200 bg-slate-100 text-slate-600 shrink-0 text-sm" aria-label="Search" title="Search emojis">🔍</button>
+      <!-- Mobile Category Buttons Populated by JS -->
+    </div>
+    <!-- Bottom Row: Input + Clear + Copy -->
+    <div class="flex items-center gap-2 pb-1">
+      <div class="flex-1 relative flex items-center h-10 rounded-lg border border-slate-200 bg-slate-50 overflow-hidden px-2.5">
+        <input id="mobile-builder-input" class="w-full bg-transparent text-slate-900 text-sm outline-none font-emoji placeholder-slate-400" placeholder="Tap emojis to build..." aria-label="Mobile emoji message">
+        <button id="mobile-clear-btn" class="hidden text-xs text-slate-400 hover:text-slate-600 px-1" aria-label="Clear">✕</button>
+      </div>
+      <button id="mobile-copy-btn" class="h-10 px-3.5 rounded-lg bg-indigo-600 text-white font-bold text-xs flex items-center justify-center gap-1 active:scale-95 transition shadow-sm shrink-0" aria-label="Copy All">
+        <span>📋</span> <span>Copy</span>
+      </button>
+    </div>
+  </aside>
+
+  <!-- Toast Notification Box -->
+  <div id="toast" class="flex items-center gap-3 px-4 py-3 rounded-xl bg-slate-900 text-white shadow-2xl border border-slate-700/40 text-sm font-medium">
+    <span id="toast-emoji" class="text-lg">📋</span>
+    <span id="toast-text">Copied to clipboard!</span>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/translations.js?v=2.2"></script>
+  <script src="js/emoji-data.js?v=2.2"></script>
+  <script src="js/app.js?v=2.2"></script>
+</body>
+</html>

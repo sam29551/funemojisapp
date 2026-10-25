@@ -1,0 +1,36 @@
+{
+  "cleanUrls": true,
+  "rewrites": [
+    { "source": "/emoji-list", "destination": "/emoji-list.html" },
+    { "source": "/generator", "destination": "/generator.html" },
+    { "source": "/translator", "destination": "/translator.html" },
+    { "source": "/kaomoji", "destination": "/kaomoji.html" },
+    { "source": "/emoji/:slug", "destination": "/emoji/:slug.html" }
+  ],
+  "headers": [
+    {
+      "source": "/",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "index, follow"
+        }
+      ]
+    },
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "query",
+          "key": "search"
+        }
+      ],
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, nofollow"
+        }
+      ]
+    }
+  ]
+}

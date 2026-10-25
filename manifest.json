@@ -1,0 +1,42 @@
+{
+  "name": "Fun Emojis Keyboard - Copy & Paste Emojis, List & Fonts",
+  "short_name": "FunEmojis",
+  "description": "The Fastest 1-Click Emoji Keyboard, Complete Unicode Emojis List, Fancy Fonts Generator & Kaomoji for Instagram, TikTok & Discord.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#0f172a",
+  "theme_color": "#6366f1",
+  "categories": ["utilities", "social", "productivity", "entertainment"],
+  "icons": [
+    {
+      "src": "data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✨</text></svg>",
+      "sizes": "192x192 512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Emoji Keyboard",
+      "url": "/#tab-emojis",
+      "description": "Open interactive 1-click emoji keyboard"
+    },
+    {
+      "name": "Emojis List Directory",
+      "url": "/#tab-list",
+      "description": "View complete Unicode emoji list with codepoints & shortcodes"
+    },
+    {
+      "name": "Fancy Fonts Generator",
+      "url": "/#tab-fonts",
+      "description": "Convert text into cool aesthetic fonts"
+    },
+    {
+      "name": "Japanese Kaomoji",
+      "url": "/#tab-kaomoji",
+      "description": "Browse and copy cute Japanese text emoticons"
+    }
+  ]
+}
